@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  
+
+</head>
+<body>
+
+<div align="center"><img onmouseover="rndColor(this)" onmouseout="whtColor(this)"
+src="black-square_1000.jpg" alt="black square" height="40" width="40"></div>
+
+<script>
+   
+    function rndColor()
+{
+    var text = "#";
+    var possible = "ABCDEF0123456789";
+
+    for( var i=0; i < 6; i++ )
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+   document.body.style.backgroundColor = text;
+}
+    
+   
+    
+    
+</script>
+</body>
+</html>
